@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:background="#FFFFFF"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.vraman.infinitecube.ContactCreate">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:gravity="center"
+        android:fontFamily="@font/alike_angular"
+        android:text="Create Contact"
+        android:textColor="#0288D1"
+        android:textSize="22sp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:hint="First Name *" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPersonName"
+        android:hint="Last Name *" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:ems="10"
+        android:hint="Phone *"
+        android:drawableLeft="@drawable/phoneicon"
+        android:drawablePadding="8dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/emailid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@drawable/emailicon"
+        android:drawablePadding="8dp"
+        android:singleLine="true"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/placeholder"
+        android:drawablePadding="8dp"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:hint="Address *"/>
+    <EditText
+        android:id="@+id/btncity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/cityicon"
+        android:drawablePadding="8dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:inputType="textPersonName"
+        android:hint="City *"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State" />
+<LinearLayout
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/arrowdown1"
+        android:ems="10"
+        android:hint="AL"
+        android:focusable="false"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/zipcode"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginStart="45dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="ZIP Code *" />
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="25sp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_toLeftOf="@+id/submit"
+            android:layout_toStartOf="@+id/submit"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/round_boarder"
+            android:text="Cancel"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#0288D1"/>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cancle"
+            android:layout_alignBottom="@+id/cancle"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:fontFamily="@font/roboto"
+            android:background="@drawable/round_boarder"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:textColor="#0288D1" />
+    </RelativeLayout>
+</LinearLayout>
+</ScrollView>

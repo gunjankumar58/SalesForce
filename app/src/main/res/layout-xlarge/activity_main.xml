@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.vraman.infinitecube.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/alike_angular"
+        android:text="Roof It Forward"
+        android:textColor="#0288D1"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="100dp"
+        android:textSize="50sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:imeOptions="actionNext"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:maxLines="1"
+        android:hint="First Name *" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:textSize="50sp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPersonName"
+        android:imeOptions="actionDone"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:maxLines="1"
+        android:hint="Last Name *" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lastname"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Representative" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:textSize="50sp"
+        android:focusable="false"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:inputType="textPersonName"
+        android:drawableRight="@drawable/arrowdown1"
+        android:hint="Justin Dover"/>
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:textSize="50dp"
+        android:background="@drawable/round_boarder"
+        android:textColor="#0288D1"
+        android:text="Submit"/>
+</RelativeLayout>

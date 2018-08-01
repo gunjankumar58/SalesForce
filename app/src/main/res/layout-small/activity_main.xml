@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.vraman.infinitecube.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/alike_angular"
+        android:text="Roof It Forward"
+        android:textColor="#0288D1"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lastname"
+        android:layout_alignStart="@+id/lastname"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="5dp"
+        android:hint="First Name *"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:textSize="8dp" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/firstname"
+        android:ems="10"
+        android:hint="Last Name *"
+        android:drawableLeft="@drawable/profileicon2"
+        android:drawablePadding="8dp"
+        android:inputType="textPersonName"
+        android:textSize="8dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/lastname"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:textSize="8dp"
+        android:text="Representative" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:drawableRight="@drawable/arrowdown1"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="Justin Dover"
+        android:inputType="textPersonName"
+        android:textSize="8dp"/>
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="70dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto"
+        android:textSize="10dp"
+        android:background="@drawable/round_boarder"
+        android:textColor="#0288D1"
+        android:text="Submit"/>
+</RelativeLayout>

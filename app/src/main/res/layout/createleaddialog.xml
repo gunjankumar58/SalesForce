@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/dialogboarder"
+    android:layout_gravity="center"
+    android:layout_width="180dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textAlignment="center"
+        android:textColor="#616161"
+        android:fontFamily="@font/alike_angular"
+        android:textSize="17sp"
+        android:layout_margin="20dp"
+        android:text="Your account will be created within 24h. Enter information about potential client in the fields below to create a new Lead."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_width="match_parent"
+        android:background="#EEEEEE"
+        android:layout_marginTop="30dp"
+        android:layout_height="1dp"/>
+
+    <Button
+            android:id="@+id/btn_ok"
+            android:text="OK"
+            android:textSize="18dp"
+            android:fontFamily="@font/alike_angular"
+            android:background="#FFF"
+            android:textColor="#0288D1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
